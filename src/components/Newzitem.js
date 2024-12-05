@@ -5,7 +5,10 @@ export default class Newzitem extends Component {
     let { title, description, img, url } = this.props;
 
     return (
-      <div className="card">
+      <div
+        className="card bg-dark text-light"
+        style={{ border: "2px solid rgb(101,175,0.5)" }}
+      >
         <img src={img} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{title}...</h5>

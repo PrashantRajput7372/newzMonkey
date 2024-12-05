@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import Newcontainer from "./components/Newcontainer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LoadingBar from "react-top-loading-bar";
+// import LoadingBar from "react-top-loading-bar";
 
 const router = createBrowserRouter([
   {
@@ -12,14 +12,13 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-
         <Newcontainer
           key="general"
           country={"us"}
           category={"general"}
           pageSize={6}
         />
-        <LoadingBar color="red" progress={100} />
+        
       </>
     ),
   },
@@ -28,7 +27,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <LoadingBar color="red" progress={100} />
+        {/* <LoadingBar color="red" progress={100} /> */}
         <Newcontainer
           key="sports"
           country={"us"}
